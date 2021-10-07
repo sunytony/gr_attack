@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1attack_1_1random__periodic__source" kind="class"><name>gr::attack::random_periodic_source</name>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1a272ddb737b83ca3e525d06a79a70f69a" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1a9fd7980ce505771851b9968f9e13bf5c" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1a315d1a905cbe853016bcf1ca1d761c7d" kind="function"><name>set_nmsg</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1ad180460075a71cddf32575fdf0cbd626" kind="function"><name>get_nmsg</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1ac5cb6cacc963d85703b0a4bc7be79a36" kind="function"><name>set_delay</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1a59bf89c52b107206bfe285cfa0311949" kind="function"><name>get_delay</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1a76b3f28539160c60d957871de99fd3a7" kind="function"><name>start_tx</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1a04b4eac686128e7cb0e5bad19b28fac7" kind="function"><name>stop_tx</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source_1a5da66411afe8ed77dbbd3b2e33f9edac" kind="function"><name>is_running</name></member>
+  </compound>
+  <compound refid="classgr_1_1attack_1_1random__periodic__source__impl" kind="class"><name>gr::attack::random_periodic_source_impl</name>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a9994789fc6705fffffca1822cad8a29b" kind="variable"><name>d_msg_len</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ac3b4f7072274019c1878cbc88eb22257" kind="variable"><name>d_nmsg_total</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a7196f789bf6ed8fa2b2b60cbfd746341" kind="variable"><name>d_nmsg_left</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1aa2e63424e39b4ae6633c6485143baa0c" kind="variable"><name>d_seed</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a25fe3475d9891f4bc0e2774e6373f166" kind="variable"><name>d_quit</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a6804b1c6f9322179008a6c4ec6c3ebab" kind="variable"><name>d_finished</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ad193a20228e8b642082afd5201ab8206" kind="variable"><name>d_interval</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a762b88ce5921d14aa1759e9c72dcfa27" kind="variable"><name>d_thread</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a44b494b05b5fa8ba9f0c536ecbcf4788" kind="variable"><name>d_mutex</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ae212a392411fbcd6347efa918fb8fb11" kind="variable"><name>d_rng</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1aca42a273462d98ec6425f118fdb16b69" kind="variable"><name>d_brange</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a2d00e7ee4d97319e13cbe5444757d5d7" kind="variable"><name>d_randbytes</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a3152bd0cdfe2f676c1198f09d02a7a50" kind="function"><name>run</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a7c95bef01847925640e545984c581cac" kind="function"><name>random_periodic_source_impl</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ac08f501c248df634c801c43e0d0c2e10" kind="function"><name>~random_periodic_source_impl</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a64567155a3cf5747ef5936a099010849" kind="function"><name>set_nmsg</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a5c094f11c1aa5be80ce57044cc989b46" kind="function"><name>get_nmsg</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a721fadfe07c3dce563ccc478729e9ad4" kind="function"><name>set_delay</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a283f019f687909ce8dd072585957885c" kind="function"><name>get_delay</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a9cfb3cfc427a691be9b2a42a64dd2e1f" kind="function"><name>start_tx</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a95896a25d3b29d35c5c79da8e3622850" kind="function"><name>stop_tx</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1af1157239fc1b1bce788367456b44700c" kind="function"><name>generate_msg</name></member>
+    <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ade92930005ee676eef38d914edc1f06f" kind="function"><name>is_running</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1attack" kind="namespace"><name>gr::attack</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a9d4434c8c2111a7b25901442f171c601" kind="define"><name>ATTACK_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="random__periodic__source_8h" kind="file"><name>random_periodic_source.h</name>
+  </compound>
+  <compound refid="random__periodic__source__impl_8h" kind="file"><name>random_periodic_source_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_858de35177d3746901639f300a814fef" kind="dir"><name>attack</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

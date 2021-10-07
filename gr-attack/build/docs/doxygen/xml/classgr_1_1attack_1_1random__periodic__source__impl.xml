@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1attack_1_1random__periodic__source__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::attack::random_periodic_source_impl</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">random_periodic_msg_source</basecompoundref>
+    <basecompoundref refid="classgr_1_1attack_1_1random__periodic__source" prot="public" virt="non-virtual">gr::attack::random_periodic_source</basecompoundref>
+    <includes refid="random__periodic__source__impl_8h" local="no">random_periodic_source_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1a9994789fc6705fffffca1822cad8a29b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::attack::random_periodic_source_impl::d_msg_len</definition>
+        <argsstring></argsstring>
+        <name>d_msg_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="37" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1ac3b4f7072274019c1878cbc88eb22257" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::attack::random_periodic_source_impl::d_nmsg_total</definition>
+        <argsstring></argsstring>
+        <name>d_nmsg_total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="38" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1a7196f789bf6ed8fa2b2b60cbfd746341" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::attack::random_periodic_source_impl::d_nmsg_left</definition>
+        <argsstring></argsstring>
+        <name>d_nmsg_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="39" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1aa2e63424e39b4ae6633c6485143baa0c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::attack::random_periodic_source_impl::d_seed</definition>
+        <argsstring></argsstring>
+        <name>d_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="40" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1a25fe3475d9891f4bc0e2774e6373f166" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::attack::random_periodic_source_impl::d_quit</definition>
+        <argsstring></argsstring>
+        <name>d_quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="42" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1a6804b1c6f9322179008a6c4ec6c3ebab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::attack::random_periodic_source_impl::d_finished</definition>
+        <argsstring></argsstring>
+        <name>d_finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="43" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1ad193a20228e8b642082afd5201ab8206" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long gr::attack::random_periodic_source_impl::d_interval</definition>
+        <argsstring></argsstring>
+        <name>d_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="44" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1a762b88ce5921d14aa1759e9c72dcfa27" prot="private" static="no" mutable="no">
+        <type>boost::thread *</type>
+        <definition>boost::thread* gr::attack::random_periodic_source_impl::d_thread</definition>
+        <argsstring></argsstring>
+        <name>d_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="45" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1a44b494b05b5fa8ba9f0c536ecbcf4788" prot="private" static="no" mutable="no">
+        <type>gr::thread::mutex</type>
+        <definition>gr::thread::mutex gr::attack::random_periodic_source_impl::d_mutex</definition>
+        <argsstring></argsstring>
+        <name>d_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="46" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1ae212a392411fbcd6347efa918fb8fb11" prot="private" static="no" mutable="no">
+        <type>boost::mt19937</type>
+        <definition>boost::mt19937 gr::attack::random_periodic_source_impl::d_rng</definition>
+        <argsstring></argsstring>
+        <name>d_rng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="47" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1aca42a273462d98ec6425f118fdb16b69" prot="private" static="no" mutable="no">
+        <type>boost::uniform_int</type>
+        <definition>boost::uniform_int gr::attack::random_periodic_source_impl::d_brange</definition>
+        <argsstring></argsstring>
+        <name>d_brange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="48" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1random__periodic__source__impl_1a2d00e7ee4d97319e13cbe5444757d5d7" prot="private" static="no" mutable="no">
+        <type>boost::variate_generator&lt; boost::mt19937, boost::uniform_int&lt;&gt; &gt;</type>
+        <definition>boost::variate_generator&lt; boost::mt19937, boost::uniform_int&lt;&gt; &gt; gr::attack::random_periodic_source_impl::d_randbytes</definition>
+        <argsstring></argsstring>
+        <name>d_randbytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="49" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a3152bd0cdfe2f676c1198f09d02a7a50" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::attack::random_periodic_source_impl::run</definition>
+        <argsstring>(random_periodic_source_impl *instance)</argsstring>
+        <name>run</name>
+        <param>
+          <type><ref refid="classgr_1_1attack_1_1random__periodic__source__impl" kindref="compound">random_periodic_source_impl</ref> *</type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a7c95bef01847925640e545984c581cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::attack::random_periodic_source_impl::random_periodic_source_impl</definition>
+        <argsstring>(int msg_len, long interval, int num_msg, bool quit, bool debug, int seed)</argsstring>
+        <name>random_periodic_source_impl</name>
+        <param>
+          <type>int</type>
+          <declname>msg_len</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>interval</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_msg</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>quit</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1ac08f501c248df634c801c43e0d0c2e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::attack::random_periodic_source_impl::~random_periodic_source_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~random_periodic_source_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a64567155a3cf5747ef5936a099010849" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::attack::random_periodic_source_impl::set_nmsg</definition>
+        <argsstring>(int nmsg)</argsstring>
+        <name>set_nmsg</name>
+        <reimplements refid="classgr_1_1attack_1_1random__periodic__source_1a315d1a905cbe853016bcf1ca1d761c7d">set_nmsg</reimplements>
+        <param>
+          <type>int</type>
+          <declname>nmsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a5c094f11c1aa5be80ce57044cc989b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int gr::attack::random_periodic_source_impl::get_nmsg</definition>
+        <argsstring>()</argsstring>
+        <name>get_nmsg</name>
+        <reimplements refid="classgr_1_1attack_1_1random__periodic__source_1ad180460075a71cddf32575fdf0cbd626">get_nmsg</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a721fadfe07c3dce563ccc478729e9ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::attack::random_periodic_source_impl::set_delay</definition>
+        <argsstring>(long delay)</argsstring>
+        <name>set_delay</name>
+        <reimplements refid="classgr_1_1attack_1_1random__periodic__source_1ac5cb6cacc963d85703b0a4bc7be79a36">set_delay</reimplements>
+        <param>
+          <type>long</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a283f019f687909ce8dd072585957885c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>long gr::attack::random_periodic_source_impl::get_delay</definition>
+        <argsstring>()</argsstring>
+        <name>get_delay</name>
+        <reimplements refid="classgr_1_1attack_1_1random__periodic__source_1a59bf89c52b107206bfe285cfa0311949">get_delay</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a9cfb3cfc427a691be9b2a42a64dd2e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::attack::random_periodic_source_impl::start_tx</definition>
+        <argsstring>()</argsstring>
+        <name>start_tx</name>
+        <reimplements refid="classgr_1_1attack_1_1random__periodic__source_1a76b3f28539160c60d957871de99fd3a7">start_tx</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1a95896a25d3b29d35c5c79da8e3622850" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::attack::random_periodic_source_impl::stop_tx</definition>
+        <argsstring>()</argsstring>
+        <name>stop_tx</name>
+        <reimplements refid="classgr_1_1attack_1_1random__periodic__source_1a04b4eac686128e7cb0e5bad19b28fac7">stop_tx</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1af1157239fc1b1bce788367456b44700c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::attack::random_periodic_source_impl::generate_msg</definition>
+        <argsstring>()</argsstring>
+        <name>generate_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1random__periodic__source__impl_1ade92930005ee676eef38d914edc1f06f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool gr::attack::random_periodic_source_impl::is_running</definition>
+        <argsstring>()</argsstring>
+        <name>is_running</name>
+        <reimplements refid="classgr_1_1attack_1_1random__periodic__source_1a5da66411afe8ed77dbbd3b2e33f9edac">is_running</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="65" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::attack::random_periodic_source_impl</label>
+        <link refid="classgr_1_1attack_1_1random__periodic__source__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::attack::random_periodic_source</label>
+        <link refid="classgr_1_1attack_1_1random__periodic__source"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gr::foo::random_periodic_msg_source</label>
+      </node>
+      <node id="8">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::attack::random_periodic_source_impl</label>
+        <link refid="classgr_1_1attack_1_1random__periodic__source__impl"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gr::attack::random_periodic_source</label>
+        <link refid="classgr_1_1attack_1_1random__periodic__source"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::foo::random_periodic_msg_source</label>
+      </node>
+      <node id="12">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" line="33" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.h" bodystart="32" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1aca42a273462d98ec6425f118fdb16b69" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_brange</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a6804b1c6f9322179008a6c4ec6c3ebab" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_finished</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ad193a20228e8b642082afd5201ab8206" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_interval</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a9994789fc6705fffffca1822cad8a29b" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_msg_len</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a44b494b05b5fa8ba9f0c536ecbcf4788" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_mutex</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a7196f789bf6ed8fa2b2b60cbfd746341" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_nmsg_left</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ac3b4f7072274019c1878cbc88eb22257" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_nmsg_total</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a25fe3475d9891f4bc0e2774e6373f166" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_quit</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a2d00e7ee4d97319e13cbe5444757d5d7" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_randbytes</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ae212a392411fbcd6347efa918fb8fb11" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_rng</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1aa2e63424e39b4ae6633c6485143baa0c" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_seed</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a762b88ce5921d14aa1759e9c72dcfa27" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>d_thread</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1af1157239fc1b1bce788367456b44700c" prot="public" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>generate_msg</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a283f019f687909ce8dd072585957885c" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>get_delay</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a5c094f11c1aa5be80ce57044cc989b46" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>get_nmsg</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ade92930005ee676eef38d914edc1f06f" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>is_running</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source_1a9fd7980ce505771851b9968f9e13bf5c" prot="public" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a7c95bef01847925640e545984c581cac" prot="public" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>random_periodic_source_impl</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a3152bd0cdfe2f676c1198f09d02a7a50" prot="private" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>run</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a721fadfe07c3dce563ccc478729e9ad4" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>set_delay</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a64567155a3cf5747ef5936a099010849" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>set_nmsg</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source_1a272ddb737b83ca3e525d06a79a70f69a" prot="public" virt="non-virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a9cfb3cfc427a691be9b2a42a64dd2e1f" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>start_tx</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1a95896a25d3b29d35c5c79da8e3622850" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>stop_tx</name></member>
+      <member refid="classgr_1_1attack_1_1random__periodic__source__impl_1ac08f501c248df634c801c43e0d0c2e10" prot="public" virt="virtual"><scope>gr::attack::random_periodic_source_impl</scope><name>~random_periodic_source_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

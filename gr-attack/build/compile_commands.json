@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/seungmin/git/gr_attack/gr-attack/build/lib",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dgnuradio_attack_EXPORTS -I/home/seungmin/git/gr_attack/gr-attack/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-attack.dir/random_periodic_source_impl.cc.o -c /home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.cc",
+  "file": "/home/seungmin/git/gr_attack/gr-attack/lib/random_periodic_source_impl.cc"
+},
+{
+  "directory": "/home/seungmin/git/gr_attack/gr-attack/build/lib",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dgnuradio_attack_EXPORTS -I/home/seungmin/git/gr_attack/gr-attack/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-attack.dir/modified_RAPP_impl.cc.o -c /home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.cc",
+  "file": "/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.cc"
+},
+{
+  "directory": "/home/seungmin/git/gr_attack/gr-attack/build/swig",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/_attack_swig_doc_tag.dir/_attack_swig_doc_tag.cpp.o -c /home/seungmin/git/gr_attack/gr-attack/build/swig/_attack_swig_doc_tag.cpp",
+  "file": "/home/seungmin/git/gr_attack/gr-attack/build/swig/_attack_swig_doc_tag.cpp"
+},
+{
+  "directory": "/home/seungmin/git/gr_attack/gr-attack/build/swig",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dattack_swig_EXPORTS -I/home/seungmin/git/gr_attack/gr-attack/build/swig -I/home/seungmin/git/gr_attack/gr-attack/swig -I/usr/local/include/gnuradio/swig -I/home/seungmin/git/gr_attack/gr-attack/lib/../include -isystem /usr/include/python3.6m  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/attack_swig.dir/CMakeFiles/attack_swig.dir/attack_swigPYTHON_wrap.cxx.o -c /home/seungmin/git/gr_attack/gr-attack/build/swig/CMakeFiles/attack_swig.dir/attack_swigPYTHON_wrap.cxx",
+  "file": "/home/seungmin/git/gr_attack/gr-attack/build/swig/CMakeFiles/attack_swig.dir/attack_swigPYTHON_wrap.cxx"
+}
+]

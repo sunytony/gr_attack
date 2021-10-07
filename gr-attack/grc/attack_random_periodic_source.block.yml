@@ -1,0 +1,58 @@
+id: attack_random_periodic_source
+label: random_periodic_source
+category: '[attack]'
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+-   id: msg_len
+    label: Message Length
+    dtype: int
+    default: '64'
+-   id: interval
+    label: Period (ms)
+    dtype: int
+    default: '1000'
+-   id: quit
+    label: Quit
+    dtype: bool
+    default: 'True'
+    options: ['True', 'False']
+    option_labels: [Enable, Disable]
+-   id: debug
+    label: Debug
+    dtype: bool
+    default: 'False'
+    options: ['True', 'False']
+    option_labels: [Enable, Disable]
+-   id: num
+    label: Num Messages
+    dtype: int
+    default: '1'
+-   id: seed
+    label: Random Seed
+    dtype: int
+    default: '1'
+
+outputs:
+-   domain: message
+    id: out
+    optional: true
+-   domain: message
+    id: impairment
+    optional: true
+-   domain: message
+    id: pa
+    optional: true
+
+templates:
+    imports: |-
+        import attack
+        import pmt
+    make: attack.random_periodic_source(${msg_len}, ${interval}, ${num}, ${quit},
+        ${debug}, ${seed})
+
+file_format: 1
