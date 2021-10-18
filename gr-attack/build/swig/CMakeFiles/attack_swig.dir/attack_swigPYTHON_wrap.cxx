@@ -9139,23 +9139,23 @@ SWIGINTERN PyObject *random_periodic_source_sptr_swigregister(PyObject *SWIGUNUS
 
 SWIGINTERN PyObject *_wrap_modified_RAPP_make__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  double arg1 ;
-  double arg2 ;
-  double arg3 ;
-  double arg4 ;
-  double arg5 ;
-  double arg6 ;
-  double val1 ;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  float val1 ;
   int ecode1 = 0 ;
-  double val2 ;
+  float val2 ;
   int ecode2 = 0 ;
-  double val3 ;
+  float val3 ;
   int ecode3 = 0 ;
-  double val4 ;
+  float val4 ;
   int ecode4 = 0 ;
-  double val5 ;
+  float val5 ;
   int ecode5 = 0 ;
-  double val6 ;
+  float val6 ;
   int ecode6 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
@@ -9166,36 +9166,36 @@ SWIGINTERN PyObject *_wrap_modified_RAPP_make__SWIG_0(PyObject *SWIGUNUSEDPARM(s
   gr::attack::modified_RAPP::sptr result;
   
   if(!PyArg_UnpackTuple(args,(char *)"modified_RAPP_make",6,6,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
-  ecode1 = SWIG_AsVal_double(obj0, &val1);
+  ecode1 = SWIG_AsVal_float(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "modified_RAPP_make" "', argument " "1"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "modified_RAPP_make" "', argument " "1"" of type '" "float""'");
   } 
-  arg1 = static_cast< double >(val1);
-  ecode2 = SWIG_AsVal_double(obj1, &val2);
+  arg1 = static_cast< float >(val1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "modified_RAPP_make" "', argument " "2"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "modified_RAPP_make" "', argument " "2"" of type '" "float""'");
   } 
-  arg2 = static_cast< double >(val2);
-  ecode3 = SWIG_AsVal_double(obj2, &val3);
+  arg2 = static_cast< float >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "modified_RAPP_make" "', argument " "3"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "modified_RAPP_make" "', argument " "3"" of type '" "float""'");
   } 
-  arg3 = static_cast< double >(val3);
-  ecode4 = SWIG_AsVal_double(obj3, &val4);
+  arg3 = static_cast< float >(val3);
+  ecode4 = SWIG_AsVal_float(obj3, &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "modified_RAPP_make" "', argument " "4"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "modified_RAPP_make" "', argument " "4"" of type '" "float""'");
   } 
-  arg4 = static_cast< double >(val4);
-  ecode5 = SWIG_AsVal_double(obj4, &val5);
+  arg4 = static_cast< float >(val4);
+  ecode5 = SWIG_AsVal_float(obj4, &val5);
   if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "modified_RAPP_make" "', argument " "5"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "modified_RAPP_make" "', argument " "5"" of type '" "float""'");
   } 
-  arg5 = static_cast< double >(val5);
-  ecode6 = SWIG_AsVal_double(obj5, &val6);
+  arg5 = static_cast< float >(val5);
+  ecode6 = SWIG_AsVal_float(obj5, &val6);
   if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "modified_RAPP_make" "', argument " "6"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "modified_RAPP_make" "', argument " "6"" of type '" "float""'");
   } 
-  arg6 = static_cast< double >(val6);
+  arg6 = static_cast< float >(val6);
   {
     try {
       result = gr::attack::modified_RAPP::make(arg1,arg2,arg3,arg4,arg5,arg6);
@@ -9257,32 +9257,32 @@ SWIGINTERN PyObject *_wrap_modified_RAPP_make(PyObject *self, PyObject *args) {
   if (argc == 6) {
     int _v;
     {
-      int res = SWIG_AsVal_double(argv[0], NULL);
+      int res = SWIG_AsVal_float(argv[0], NULL);
       _v = SWIG_CheckState(res);
     }
     if (_v) {
       {
-        int res = SWIG_AsVal_double(argv[1], NULL);
+        int res = SWIG_AsVal_float(argv[1], NULL);
         _v = SWIG_CheckState(res);
       }
       if (_v) {
         {
-          int res = SWIG_AsVal_double(argv[2], NULL);
+          int res = SWIG_AsVal_float(argv[2], NULL);
           _v = SWIG_CheckState(res);
         }
         if (_v) {
           {
-            int res = SWIG_AsVal_double(argv[3], NULL);
+            int res = SWIG_AsVal_float(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
             {
-              int res = SWIG_AsVal_double(argv[4], NULL);
+              int res = SWIG_AsVal_float(argv[4], NULL);
               _v = SWIG_CheckState(res);
             }
             if (_v) {
               {
-                int res = SWIG_AsVal_double(argv[5], NULL);
+                int res = SWIG_AsVal_float(argv[5], NULL);
                 _v = SWIG_CheckState(res);
               }
               if (_v) {
@@ -9298,7 +9298,7 @@ SWIGINTERN PyObject *_wrap_modified_RAPP_make(PyObject *self, PyObject *args) {
 fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'modified_RAPP_make'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    gr::attack::modified_RAPP::make(double,double,double,double,double,double)\n"
+    "    gr::attack::modified_RAPP::make(float,float,float,float,float,float)\n"
     "    gr::attack::modified_RAPP::make()\n");
   return 0;
 }
@@ -9502,25 +9502,25 @@ fail:
 SWIGINTERN PyObject *_wrap_modified_RAPP_sptr_make__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::attack::modified_RAPP > *arg1 = (boost::shared_ptr< gr::attack::modified_RAPP > *) 0 ;
-  double arg2 ;
-  double arg3 ;
-  double arg4 ;
-  double arg5 ;
-  double arg6 ;
-  double arg7 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  float arg7 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  double val2 ;
+  float val2 ;
   int ecode2 = 0 ;
-  double val3 ;
+  float val3 ;
   int ecode3 = 0 ;
-  double val4 ;
+  float val4 ;
   int ecode4 = 0 ;
-  double val5 ;
+  float val5 ;
   int ecode5 = 0 ;
-  double val6 ;
+  float val6 ;
   int ecode6 = 0 ;
-  double val7 ;
+  float val7 ;
   int ecode7 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
@@ -9537,36 +9537,36 @@ SWIGINTERN PyObject *_wrap_modified_RAPP_sptr_make__SWIG_0(PyObject *SWIGUNUSEDP
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "modified_RAPP_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::attack::modified_RAPP > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< gr::attack::modified_RAPP > * >(argp1);
-  ecode2 = SWIG_AsVal_double(obj1, &val2);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "modified_RAPP_sptr_make" "', argument " "2"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "modified_RAPP_sptr_make" "', argument " "2"" of type '" "float""'");
   } 
-  arg2 = static_cast< double >(val2);
-  ecode3 = SWIG_AsVal_double(obj2, &val3);
+  arg2 = static_cast< float >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "modified_RAPP_sptr_make" "', argument " "3"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "modified_RAPP_sptr_make" "', argument " "3"" of type '" "float""'");
   } 
-  arg3 = static_cast< double >(val3);
-  ecode4 = SWIG_AsVal_double(obj3, &val4);
+  arg3 = static_cast< float >(val3);
+  ecode4 = SWIG_AsVal_float(obj3, &val4);
   if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "modified_RAPP_sptr_make" "', argument " "4"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "modified_RAPP_sptr_make" "', argument " "4"" of type '" "float""'");
   } 
-  arg4 = static_cast< double >(val4);
-  ecode5 = SWIG_AsVal_double(obj4, &val5);
+  arg4 = static_cast< float >(val4);
+  ecode5 = SWIG_AsVal_float(obj4, &val5);
   if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "modified_RAPP_sptr_make" "', argument " "5"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "modified_RAPP_sptr_make" "', argument " "5"" of type '" "float""'");
   } 
-  arg5 = static_cast< double >(val5);
-  ecode6 = SWIG_AsVal_double(obj5, &val6);
+  arg5 = static_cast< float >(val5);
+  ecode6 = SWIG_AsVal_float(obj5, &val6);
   if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "modified_RAPP_sptr_make" "', argument " "6"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "modified_RAPP_sptr_make" "', argument " "6"" of type '" "float""'");
   } 
-  arg6 = static_cast< double >(val6);
-  ecode7 = SWIG_AsVal_double(obj6, &val7);
+  arg6 = static_cast< float >(val6);
+  ecode7 = SWIG_AsVal_float(obj6, &val7);
   if (!SWIG_IsOK(ecode7)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "modified_RAPP_sptr_make" "', argument " "7"" of type '" "double""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "modified_RAPP_sptr_make" "', argument " "7"" of type '" "float""'");
   } 
-  arg7 = static_cast< double >(val7);
+  arg7 = static_cast< float >(val7);
   {
     try {
       result = (*arg1)->make(arg2,arg3,arg4,arg5,arg6,arg7);
@@ -9647,32 +9647,32 @@ SWIGINTERN PyObject *_wrap_modified_RAPP_sptr_make(PyObject *self, PyObject *arg
     _v = SWIG_CheckState(res);
     if (_v) {
       {
-        int res = SWIG_AsVal_double(argv[1], NULL);
+        int res = SWIG_AsVal_float(argv[1], NULL);
         _v = SWIG_CheckState(res);
       }
       if (_v) {
         {
-          int res = SWIG_AsVal_double(argv[2], NULL);
+          int res = SWIG_AsVal_float(argv[2], NULL);
           _v = SWIG_CheckState(res);
         }
         if (_v) {
           {
-            int res = SWIG_AsVal_double(argv[3], NULL);
+            int res = SWIG_AsVal_float(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
             {
-              int res = SWIG_AsVal_double(argv[4], NULL);
+              int res = SWIG_AsVal_float(argv[4], NULL);
               _v = SWIG_CheckState(res);
             }
             if (_v) {
               {
-                int res = SWIG_AsVal_double(argv[5], NULL);
+                int res = SWIG_AsVal_float(argv[5], NULL);
                 _v = SWIG_CheckState(res);
               }
               if (_v) {
                 {
-                  int res = SWIG_AsVal_double(argv[6], NULL);
+                  int res = SWIG_AsVal_float(argv[6], NULL);
                   _v = SWIG_CheckState(res);
                 }
                 if (_v) {
@@ -9689,7 +9689,7 @@ SWIGINTERN PyObject *_wrap_modified_RAPP_sptr_make(PyObject *self, PyObject *arg
 fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'modified_RAPP_sptr_make'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    gr::attack::modified_RAPP::make(double,double,double,double,double,double)\n"
+    "    gr::attack::modified_RAPP::make(float,float,float,float,float,float)\n"
     "    gr::attack::modified_RAPP::make()\n");
   return 0;
 }
@@ -12933,8 +12933,22 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"random_periodic_source_sptr_message_subscribers", (PyCFunction) _wrap_random_periodic_source_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"random_periodic_source_sptr_message_subscribers(random_periodic_source_sptr self, swig_pmt_ptr which_port) -> swig_pmt_ptr"},
 	 { (char *)"random_periodic_source_sptr_swigregister", random_periodic_source_sptr_swigregister, METH_VARARGS, NULL},
 	 { (char *)"modified_RAPP_make", _wrap_modified_RAPP_make, METH_VARARGS, (char *)"\n"
-		"make(double LinearGain, double PhaseGain, double Smoothness, double PhaseSmoothness, double OutputSL, double PhaseSaturation) -> modified_RAPP_sptr\n"
+		"make(float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation) -> modified_RAPP_sptr\n"
 		"modified_RAPP_make() -> modified_RAPP_sptr\n"
+		"\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"\n"
+		"\n"
+		"Args:\n"
+		"    LinearGain : \n"
+		"    PhaseGain : \n"
+		"    Smoothness : \n"
+		"    PhaseSmoothness : \n"
+		"    OutputSL : \n"
+		"    PhaseSaturation : \n"
 		""},
 	 { (char *)"delete_modified_RAPP", _wrap_delete_modified_RAPP, METH_VARARGS, (char *)"delete_modified_RAPP(modified_RAPP self)"},
 	 { (char *)"modified_RAPP_swigregister", modified_RAPP_swigregister, METH_VARARGS, NULL},
@@ -12945,8 +12959,22 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"modified_RAPP_sptr___deref__", _wrap_modified_RAPP_sptr___deref__, METH_VARARGS, (char *)"modified_RAPP_sptr___deref__(modified_RAPP_sptr self) -> modified_RAPP"},
 	 { (char *)"delete_modified_RAPP_sptr", _wrap_delete_modified_RAPP_sptr, METH_VARARGS, (char *)"delete_modified_RAPP_sptr(modified_RAPP_sptr self)"},
 	 { (char *)"modified_RAPP_sptr_make", _wrap_modified_RAPP_sptr_make, METH_VARARGS, (char *)"\n"
-		"make(double LinearGain, double PhaseGain, double Smoothness, double PhaseSmoothness, double OutputSL, double PhaseSaturation) -> modified_RAPP_sptr\n"
+		"make(float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation) -> modified_RAPP_sptr\n"
 		"modified_RAPP_sptr_make(modified_RAPP_sptr self) -> modified_RAPP_sptr\n"
+		"\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"\n"
+		"\n"
+		"Args:\n"
+		"    LinearGain : \n"
+		"    PhaseGain : \n"
+		"    Smoothness : \n"
+		"    PhaseSmoothness : \n"
+		"    OutputSL : \n"
+		"    PhaseSaturation : \n"
 		""},
 	 { (char *)"modified_RAPP_sptr_history", _wrap_modified_RAPP_sptr_history, METH_VARARGS, (char *)"modified_RAPP_sptr_history(modified_RAPP_sptr self) -> unsigned int"},
 	 { (char *)"modified_RAPP_sptr_declare_sample_delay", _wrap_modified_RAPP_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"

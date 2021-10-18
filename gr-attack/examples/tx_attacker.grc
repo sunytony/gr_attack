@@ -279,7 +279,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [384, 492.0]
+    coordinate: [408, 492.0]
     rotation: 0
     state: true
 - name: attack_modified_RAPP_0
@@ -300,9 +300,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 508.0]
+    coordinate: [664, 612.0]
     rotation: 0
-    state: true
+    state: disabled
 - name: attack_random_periodic_source_1
   id: attack_random_periodic_source
   parameters:
@@ -321,9 +321,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [224, 132.0]
+    coordinate: [720, 124.0]
     rotation: 0
-    state: true
+    state: disabled
 - name: blocks_multiply_const_vxx_0
   id: blocks_multiply_const_vxx
   parameters:
@@ -362,6 +362,25 @@ blocks:
     coordinate: [304, 268.0]
     rotation: 0
     state: enabled
+- name: blocks_throttle_0
+  id: blocks_throttle
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 540.0]
+    rotation: 0
+    state: true
 - name: blocks_vector_source_x_0
   id: blocks_vector_source_x
   parameters:
@@ -420,9 +439,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [32, 308.0]
+    coordinate: [168, 148.0]
     rotation: 0
-    state: disabled
+    state: enabled
 - name: ieee802_11_mac_0
   id: ieee802_11_mac
   parameters:
@@ -441,6 +460,98 @@ blocks:
     coordinate: [600, 220.0]
     rotation: 0
     state: enabled
+- name: qtgui_const_sink_x_0
+  id: qtgui_const_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: '"blue"'
+    color10: '"red"'
+    color2: '"red"'
+    color3: '"red"'
+    color4: '"red"'
+    color5: '"red"'
+    color6: '"red"'
+    color7: '"red"'
+    color8: '"red"'
+    color9: '"red"'
+    comment: ''
+    grid: 'False'
+    gui_hint: ''
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    marker1: '0'
+    marker10: '0'
+    marker2: '0'
+    marker3: '0'
+    marker4: '0'
+    marker5: '0'
+    marker6: '0'
+    marker7: '0'
+    marker8: '0'
+    marker9: '0'
+    name: '"test"'
+    nconnections: '1'
+    size: '1024'
+    style1: '0'
+    style10: '0'
+    style2: '0'
+    style3: '0'
+    style4: '0'
+    style5: '0'
+    style6: '0'
+    style7: '0'
+    style8: '0'
+    style9: '0'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    xmax: '2'
+    xmin: '-2'
+    ymax: '2'
+    ymin: '-2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1160, 572.0]
+    rotation: 0
+    state: true
 - name: uhd_usrp_sink_0
   id: uhd_usrp_sink
   parameters:
@@ -715,9 +826,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [928, 492.0]
+    coordinate: [1096, 364.0]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: wifi_phy_hier_0
   id: wifi_phy_hier
   parameters:
@@ -741,14 +852,18 @@ blocks:
 
 connections:
 - [attack_impairment_block_0, '0', attack_modified_RAPP_0, '0']
+- [attack_impairment_block_0, '0', blocks_throttle_0, '0']
+- [attack_modified_RAPP_0, '0', blocks_throttle_0, '0']
 - [attack_modified_RAPP_0, '0', uhd_usrp_sink_0, '0']
 - [attack_random_periodic_source_1, impairment, attack_impairment_block_0, params]
 - [attack_random_periodic_source_1, out, ieee802_11_mac_0, app in]
 - [attack_random_periodic_source_1, pa, attack_modified_RAPP_0, params]
 - [blocks_multiply_const_vxx_0, '0', foo_packet_pad2_0, '0']
 - [blocks_socket_pdu_0, pdus, ieee802_11_mac_0, app in]
+- [blocks_throttle_0, '0', qtgui_const_sink_x_0, '0']
 - [blocks_vector_source_x_0, '0', wifi_phy_hier_0, '0']
 - [foo_packet_pad2_0, '0', attack_impairment_block_0, '0']
+- [foo_random_periodic_msg_source_0, out, ieee802_11_mac_0, app in]
 - [ieee802_11_mac_0, phy out, ieee802_11_mac_0, app in]
 - [ieee802_11_mac_0, phy out, wifi_phy_hier_0, mac_in]
 - [wifi_phy_hier_0, '0', blocks_multiply_const_vxx_0, '0']

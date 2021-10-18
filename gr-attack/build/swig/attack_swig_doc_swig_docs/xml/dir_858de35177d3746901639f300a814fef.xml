@@ -3,6 +3,7 @@
   <compounddef id="dir_858de35177d3746901639f300a814fef" kind="dir">
     <compoundname>attack</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="modified__RAPP_8h">modified_RAPP.h</innerfile>
     <innerfile refid="random__periodic__source_8h">random_periodic_source.h</innerfile>
     <briefdescription>
     </briefdescription>

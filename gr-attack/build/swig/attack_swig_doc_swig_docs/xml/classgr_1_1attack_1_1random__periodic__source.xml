@@ -168,24 +168,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="0">
+      <node id="4">
         <label>gr::attack::random_periodic_source</label>
         <link refid="classgr_1_1attack_1_1random__periodic__source"/>
-        <childnode refid="1" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1">
+      <node id="5">
         <label>gr::block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
+      <node id="6">
         <label>gr::attack::random_periodic_source</label>
         <link refid="classgr_1_1attack_1_1random__periodic__source"/>
-        <childnode refid="3" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="7">
         <label>gr::block</label>
       </node>
     </collaborationgraph>

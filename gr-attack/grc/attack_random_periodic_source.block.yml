@@ -1,5 +1,5 @@
 id: attack_random_periodic_source
-label: random_periodic_source
+label: Random Periodic Source
 category: '[attack]'
 
 #  Make one 'parameters' list entry for every parameter you want settable from the GUI.

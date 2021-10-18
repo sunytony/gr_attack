@@ -5,24 +5,24 @@
     <includes refid="api_8h" local="no">attack/api.h</includes>
     <includes local="no">gnuradio/block.h</includes>
     <incdepgraph>
-      <node id="5">
+      <node id="11">
         <label>attack/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="10">
         <label>random_periodic_source.h</label>
         <link refid="random__periodic__source_8h"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="12">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="7">
+      <node id="13">
         <label>gnuradio/block.h</label>
       </node>
     </incdepgraph>
@@ -60,8 +60,8 @@
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="api_8h" kindref="compound">attack/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gnuradio/block.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="namespacegr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegr" kindref="compound">gr</ref><sp/>{</highlight></codeline>
-<codeline lineno="28" refid="namespacegr_1_1attack" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">attack<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegr" kindref="compound">gr</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">attack<sp/>{</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35" refid="classgr_1_1attack_1_1random__periodic__source" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="api_8h_1a9d4434c8c2111a7b25901442f171c601" kindref="member">ATTACK_API</ref><sp/><ref refid="classgr_1_1attack_1_1random__periodic__source" kindref="compound">random_periodic_source</ref><sp/>:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr::block</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>

@@ -630,7 +630,21 @@ random_periodic_source_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self
 random_periodic_source = random_periodic_source.make;
 
 class modified_RAPP(object):
-    """Proxy of C++ gr::attack::modified_RAPP class."""
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+
+
+    Args:
+        LinearGain : 
+        PhaseGain : 
+        Smoothness : 
+        PhaseSmoothness : 
+        OutputSL : 
+        PhaseSaturation : 
+    """
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -640,8 +654,22 @@ class modified_RAPP(object):
 
     def make(*args) -> "gr::attack::modified_RAPP::sptr":
         """
-        make(double LinearGain, double PhaseGain, double Smoothness, double PhaseSmoothness, double OutputSL, double PhaseSaturation) -> modified_RAPP_sptr
+        make(float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation) -> modified_RAPP_sptr
         make() -> modified_RAPP_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+
+
+        Args:
+            LinearGain : 
+            PhaseGain : 
+            Smoothness : 
+            PhaseSmoothness : 
+            OutputSL : 
+            PhaseSaturation : 
         """
         return _attack_swig.modified_RAPP_make(*args)
 
@@ -653,8 +681,22 @@ modified_RAPP_swigregister(modified_RAPP)
 
 def modified_RAPP_make(*args) -> "gr::attack::modified_RAPP::sptr":
     """
-    make(double LinearGain, double PhaseGain, double Smoothness, double PhaseSmoothness, double OutputSL, double PhaseSaturation) -> modified_RAPP_sptr
+    make(float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation) -> modified_RAPP_sptr
     modified_RAPP_make() -> modified_RAPP_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+
+
+    Args:
+        LinearGain : 
+        PhaseGain : 
+        Smoothness : 
+        PhaseSmoothness : 
+        OutputSL : 
+        PhaseSaturation : 
     """
     return _attack_swig.modified_RAPP_make(*args)
 
@@ -684,8 +726,22 @@ class modified_RAPP_sptr(object):
 
     def make(self, *args) -> "gr::attack::modified_RAPP::sptr":
         """
-        make(modified_RAPP_sptr self, double LinearGain, double PhaseGain, double Smoothness, double PhaseSmoothness, double OutputSL, double PhaseSaturation) -> modified_RAPP_sptr
+        make(modified_RAPP_sptr self, float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation) -> modified_RAPP_sptr
         make(modified_RAPP_sptr self) -> modified_RAPP_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+
+
+        Args:
+            LinearGain : 
+            PhaseGain : 
+            Smoothness : 
+            PhaseSmoothness : 
+            OutputSL : 
+            PhaseSaturation : 
         """
         return _attack_swig.modified_RAPP_sptr_make(self, *args)
 

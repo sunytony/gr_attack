@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1attack_1_1modified__RAPP__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::attack::modified_RAPP_impl</compoundname>
+    <basecompoundref refid="classgr_1_1attack_1_1modified__RAPP" prot="public" virt="non-virtual">gr::attack::modified_RAPP</basecompoundref>
+    <includes refid="modified__RAPP__impl_8h" local="no">modified_RAPP_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1attack_1_1modified__RAPP__impl_1a232c33fd2b164944633b1bff451e9a16" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::attack::modified_RAPP_impl::d_lineargain</definition>
+        <argsstring></argsstring>
+        <name>d_lineargain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="32" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1modified__RAPP__impl_1a7c23a927f6dd12dc4753f61df8c34b2b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::attack::modified_RAPP_impl::d_phasegain</definition>
+        <argsstring></argsstring>
+        <name>d_phasegain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="33" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1modified__RAPP__impl_1a290cfc456638831eb19549bcdffefa49" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::attack::modified_RAPP_impl::d_smoothness</definition>
+        <argsstring></argsstring>
+        <name>d_smoothness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="34" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1modified__RAPP__impl_1a4edd7c89a26ac7df28f70feddb63b5b3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::attack::modified_RAPP_impl::d_phasesmoothness</definition>
+        <argsstring></argsstring>
+        <name>d_phasesmoothness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="35" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1modified__RAPP__impl_1a51c963f9cf75a7fe2e6df1e28fe8ba12" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::attack::modified_RAPP_impl::d_outputSL</definition>
+        <argsstring></argsstring>
+        <name>d_outputSL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="36" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1attack_1_1modified__RAPP__impl_1ac05502c7193f39d81a8aa7ebf337100b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::attack::modified_RAPP_impl::d_phasesaturation</definition>
+        <argsstring></argsstring>
+        <name>d_phasesaturation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="37" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1attack_1_1modified__RAPP__impl_1a69596baef9eaaf9608cf43cc71d2d2be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::attack::modified_RAPP_impl::set_params</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>set_params</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1attack_1_1modified__RAPP__impl_1a62edf3d575f5f09aad57449f4223e84d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::attack::modified_RAPP_impl::modified_RAPP_impl</definition>
+        <argsstring>(float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation)</argsstring>
+        <name>modified_RAPP_impl</name>
+        <param>
+          <type>float</type>
+          <declname>LinearGain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PhaseGain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Smoothness</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PhaseSmoothness</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>OutputSL</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PhaseSaturation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1modified__RAPP__impl_1aa56a317f27df0b9bf11d5514c92ed76e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::attack::modified_RAPP_impl::~modified_RAPP_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~modified_RAPP_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1modified__RAPP__impl_1a3606d4d3436f35f11cf6cd02f7130e30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::attack::modified_RAPP_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>gr::attack::modified_RAPP</label>
+        <link refid="classgr_1_1attack_1_1modified__RAPP"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="5">
+        <label>gr::attack::modified_RAPP_impl</label>
+        <link refid="classgr_1_1attack_1_1modified__RAPP__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::attack::modified_RAPP</label>
+        <link refid="classgr_1_1attack_1_1modified__RAPP"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="8">
+        <label>gr::attack::modified_RAPP_impl</label>
+        <link refid="classgr_1_1attack_1_1modified__RAPP__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" line="30" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/lib/modified_RAPP_impl.h" bodystart="29" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a232c33fd2b164944633b1bff451e9a16" prot="private" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>d_lineargain</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a51c963f9cf75a7fe2e6df1e28fe8ba12" prot="private" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>d_outputSL</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a7c23a927f6dd12dc4753f61df8c34b2b" prot="private" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>d_phasegain</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1ac05502c7193f39d81a8aa7ebf337100b" prot="private" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>d_phasesaturation</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a4edd7c89a26ac7df28f70feddb63b5b3" prot="private" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>d_phasesmoothness</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a290cfc456638831eb19549bcdffefa49" prot="private" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>d_smoothness</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP_1a219ae73f175f1c249dd5772a9a17cf00" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP_1a3f4a590351cb0e8adb099d21b477158d" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a62edf3d575f5f09aad57449f4223e84d" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>modified_RAPP_impl</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a69596baef9eaaf9608cf43cc71d2d2be" prot="private" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>set_params</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP_1a97cc7967fb3d5cb7f03511bd2dec14c7" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a3606d4d3436f35f11cf6cd02f7130e30" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1aa56a317f27df0b9bf11d5514c92ed76e" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP_impl</scope><name>~modified_RAPP_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

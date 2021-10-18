@@ -24,7 +24,8 @@
 include(GrPlatform) #define LIB_SUFFIX
 list(APPEND attack_sources
     random_periodic_source_impl.cc
-    modified_RAPP_impl.cc )
+    modified_RAPP_impl.cc
+    )
 
 set(attack_sources "${attack_sources}" PARENT_SCOPE)
 if(NOT attack_sources)

@@ -22,14 +22,13 @@
 #define INCLUDED_ATTACK_RANDOM_PERIODIC_SOURCE_IMPL_H
 
 #include <attack/random_periodic_source.h>
-#include <foo/random_periodic_msg_source.h>
 #include <boost/random.hpp>
 #include <boost/generator_iterator.hpp>
 
 namespace gr {
   namespace attack {
 
-    class random_periodic_source_impl : public gr::foo::random_periodic_msg_source, public random_periodic_source
+    class random_periodic_source_impl : public random_periodic_source
     {
      private:
       // Nothing to declare in this block.
