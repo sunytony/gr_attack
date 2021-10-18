@@ -19,9 +19,17 @@
 # Boston, MA 02110-1301, USA.
 #
 
-
+from gnuradio.channels import phase_noise_gen
+from gnuradio.channels import iqbal_gen
+from gnuradio.channels import distortion_2_gen
+from gnuradio.channels import distortion_3_gen
 
 from gnuradio import gr
+from gnuradio import blocks
+from gnuradio import analog
+from gnuradio.filter import firdes
+
+import numpy as np
 import pmt
 
 class impairment_block(gr.hier_block2, gr.basic_block):
@@ -44,10 +52,10 @@ class impairment_block(gr.hier_block2, gr.basic_block):
         )
         gr.basic_block.__init__(
             self, "My Impairments Model",
-            in_sig = None,
-            out_sig = None,
+            in_sig = [np.complex64],
+            out_sig = [np.complex64],
         )
-        self.message_port_register_hier_in("params")
+        self.message_port_register_in(pmt.intern("params"))
         self.set_msg_handler(pmt.intern("params"), self.handle_msg)
 
         ##################################################
@@ -78,7 +86,6 @@ class impairment_block(gr.hier_block2, gr.basic_block):
         ##################################################
         # Frequency offset
 
-        self.msg_connect((self,'params'),)
         self.connect((self, 0), (self.freq_modulator, 1))
         self.connect((self.freq_offset_gen, 0), (self.freq_offset_conj, 0))
         self.connect((self.freq_offset_conj, 0), (self.freq_modulator, 0))
@@ -161,5 +168,5 @@ class impairment_block(gr.hier_block2, gr.basic_block):
     def handle_msg(self, msg):
         PhaseNoise = pmt.dict_ref(msg, pmt.intern("PhaseNoise"), pmt.PMT_NIL)
         FrequencyOffset = pmt.dict_ref(msg, pmt.intern("FrequencyOffset"), pmt.PMT_NIL)
-        self.freq_offset = FrequencyOffset
-        self.phase_noise_mag = PhaseNoise
+        set_freq_offset(self, FrequencyOffset)
+        set_phase_noise_mag(self, PhaseNoise)
