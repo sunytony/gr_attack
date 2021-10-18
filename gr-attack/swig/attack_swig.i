@@ -17,3 +17,4 @@ GR_SWIG_BLOCK_MAGIC2(attack, random_periodic_source);
 
 %include "attack/modified_RAPP.h"
 GR_SWIG_BLOCK_MAGIC2(attack, modified_RAPP);
+

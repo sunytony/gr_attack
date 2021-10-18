@@ -22,8 +22,9 @@
 
 
 from gnuradio import gr
+import pmt
 
-class impairment_block(gr.hier_block2):
+class impairment_block(gr.hier_block2, gr.basic_block):
     """
     docstring for block impairment_block
     """
@@ -40,6 +41,11 @@ class impairment_block(gr.hier_block2):
             self, "My Impairments Model",
             gr.io_signature(1, 1, gr.sizeof_gr_complex*1),
             gr.io_signature(1, 1, gr.sizeof_gr_complex*1),
+        )
+        gr.basic_block.__init__(
+            self, "My Impairments Model",
+            in_sig = None,
+            out_sig = None,
         )
         self.message_port_register_hier_in("params")
         self.set_msg_handler(pmt.intern("params"), self.handle_msg)

@@ -24,5 +24,6 @@
 install(FILES
     api.h
     random_periodic_source.h
-    modified_RAPP.h DESTINATION include/attack
+    modified_RAPP.h
+    DESTINATION include/attack
 )

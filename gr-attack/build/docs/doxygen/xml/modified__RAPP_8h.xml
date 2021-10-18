@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="modified__RAPP_8h" kind="file" language="C++">
+    <compoundname>modified_RAPP.h</compoundname>
+    <includes refid="api_8h" local="no">attack/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="modified__RAPP__impl_8h" local="no">modified_RAPP_impl.h</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>attack/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="13">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="11">
+        <label>modified_RAPP.h</label>
+        <link refid="modified__RAPP_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>modified_RAPP_impl.h</label>
+        <link refid="modified__RAPP__impl_8h"/>
+      </node>
+      <node id="15">
+        <label>modified_RAPP.h</label>
+        <link refid="modified__RAPP_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1attack_1_1modified__RAPP" prot="public">gr::attack::modified_RAPP</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1attack">gr::attack</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h"/>
+  </compounddef>
+</doxygen>

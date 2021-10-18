@@ -8,6 +8,34 @@
 
 
 
+%feature("docstring") gr::attack::modified_RAPP "<+description of block+>
+
+Constructor Specific Documentation:
+
+
+
+Args:
+    LinearGain : 
+    PhaseGain : 
+    Smoothness : 
+    PhaseSmoothness : 
+    OutputSL : 
+    PhaseSaturation : "
+
+%feature("docstring") gr::attack::modified_RAPP::make "<+description of block+>
+
+Constructor Specific Documentation:
+
+
+
+Args:
+    LinearGain : 
+    PhaseGain : 
+    Smoothness : 
+    PhaseSmoothness : 
+    OutputSL : 
+    PhaseSaturation : "
+
 %feature("docstring") gr::attack::random_periodic_source "<+description of block+>
 
 Constructor Specific Documentation:

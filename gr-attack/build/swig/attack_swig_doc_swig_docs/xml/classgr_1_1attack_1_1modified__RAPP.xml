@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1attack_1_1modified__RAPP" kind="class" language="C++" prot="public">
+    <compoundname>gr::attack::modified_RAPP</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="modified__RAPP_8h" local="no">modified_RAPP.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1attack_1_1modified__RAPP_1a97cc7967fb3d5cb7f03511bd2dec14c7" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1attack_1_1modified__RAPP" kindref="compound">modified_RAPP</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;modified_RAPP&gt; gr::attack::modified_RAPP::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h" line="38" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1attack_1_1modified__RAPP_1a219ae73f175f1c249dd5772a9a17cf00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1attack_1_1modified__RAPP_1a97cc7967fb3d5cb7f03511bd2dec14c7" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::attack::modified_RAPP::make</definition>
+        <argsstring>(float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>LinearGain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PhaseGain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Smoothness</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PhaseSmoothness</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>OutputSL</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PhaseSaturation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1attack_1_1modified__RAPP_1a3f4a590351cb0e8adb099d21b477158d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1attack_1_1modified__RAPP_1a97cc7967fb3d5cb7f03511bd2dec14c7" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::attack::modified_RAPP::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1attack_1_1modified__RAPP" kindref="compound">attack::modified_RAPP</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1attack_1_1modified__RAPP" kindref="compound">attack::modified_RAPP</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1attack_1_1modified__RAPP_1a219ae73f175f1c249dd5772a9a17cf00" kindref="member">attack::modified_RAPP::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>gr::attack::modified_RAPP</label>
+        <link refid="classgr_1_1attack_1_1modified__RAPP"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::attack::modified_RAPP</label>
+        <link refid="classgr_1_1attack_1_1modified__RAPP"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h" line="36" column="1" bodyfile="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h" bodystart="35" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1attack_1_1modified__RAPP_1a219ae73f175f1c249dd5772a9a17cf00" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP</scope><name>make</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP_1a3f4a590351cb0e8adb099d21b477158d" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP</scope><name>make</name></member>
+      <member refid="classgr_1_1attack_1_1modified__RAPP_1a97cc7967fb3d5cb7f03511bd2dec14c7" prot="public" virt="non-virtual"><scope>gr::attack::modified_RAPP</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

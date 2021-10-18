@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
     <compoundname>lib</compoundname>
+    <innerfile refid="modified__RAPP__impl_8h">modified_RAPP_impl.h</innerfile>
     <innerfile refid="random__periodic__source__impl_8h">random_periodic_source_impl.h</innerfile>
     <briefdescription>
     </briefdescription>

@@ -20,5 +20,6 @@
 install(FILES
     attack_random_periodic_source.block.yml
     attack_modified_RAPP.block.yml
-    attack_impairment_block.block.yml DESTINATION share/gnuradio/grc/blocks
+    attack_impairment_block.block.yml
+    DESTINATION share/gnuradio/grc/blocks
 )

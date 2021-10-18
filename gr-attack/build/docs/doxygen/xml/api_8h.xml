@@ -3,6 +3,7 @@
   <compounddef id="api_8h" kind="file" language="C++">
     <compoundname>api.h</compoundname>
     <includes local="no">gnuradio/attributes.h</includes>
+    <includedby refid="modified__RAPP_8h" local="no">modified_RAPP.h</includedby>
     <includedby refid="random__periodic__source_8h" local="no">random_periodic_source.h</includedby>
     <incdepgraph>
       <node id="0">
@@ -16,21 +17,33 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="4">
+        <label>modified_RAPP_impl.h</label>
+        <link refid="modified__RAPP__impl_8h"/>
+      </node>
       <node id="2">
         <label>api.h</label>
         <link refid="api_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>random_periodic_source.h</label>
-        <link refid="random__periodic__source_8h"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
+        <label>random_periodic_source.h</label>
+        <link refid="random__periodic__source_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>random_periodic_source_impl.h</label>
         <link refid="random__periodic__source__impl_8h"/>
+      </node>
+      <node id="3">
+        <label>modified_RAPP.h</label>
+        <link refid="modified__RAPP_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

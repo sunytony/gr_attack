@@ -29,7 +29,6 @@ from PyQt5.QtCore import QObject, pyqtSlot
 from gnuradio import qtgui
 import sip
 from gnuradio import blocks
-import pmt
 from gnuradio import gr
 from gnuradio.filter import firdes
 import signal
@@ -38,6 +37,9 @@ from gnuradio.eng_arg import eng_float, intx
 from gnuradio import eng_notation
 from gnuradio.qtgui import Range, RangeWidget
 from wifi_phy_hier import wifi_phy_hier  # grc-generated hier_block
+import attack
+import foo
+import pmt
 import ieee802_11
 
 from gnuradio import qtgui
@@ -109,9 +111,6 @@ class tx_attacker(gr.top_block, Qt.QWidget):
         self._pdu_length_range = Range(0, 1500, 1, 500, 200)
         self._pdu_length_win = RangeWidget(self._pdu_length_range, self.set_pdu_length, 'pdu_length', "counter_slider", int)
         self.top_layout.addWidget(self._pdu_length_win)
-        self._interval_range = Range(10, 1000, 1, 300, 200)
-        self._interval_win = RangeWidget(self._interval_range, self.set_interval, 'interval', "counter_slider", int)
-        self.top_layout.addWidget(self._interval_win)
         # Create the options list
         self._freq_options = [2412000000.0, 2417000000.0, 2422000000.0, 2427000000.0, 2432000000.0, 2437000000.0, 2442000000.0, 2447000000.0, 2452000000.0, 2457000000.0, 2462000000.0, 2467000000.0, 2472000000.0, 2484000000.0, 5170000000.0, 5180000000.0, 5190000000.0, 5200000000.0, 5210000000.0, 5220000000.0, 5230000000.0, 5240000000.0, 5250000000.0, 5260000000.0, 5270000000.0, 5280000000.0, 5290000000.0, 5300000000.0, 5310000000.0, 5320000000.0, 5500000000.0, 5510000000.0, 5520000000.0, 5530000000.0, 5540000000.0, 5550000000.0, 5560000000.0, 5570000000.0, 5580000000.0, 5590000000.0, 5600000000.0, 5610000000.0, 5620000000.0, 5630000000.0, 5640000000.0, 5660000000.0, 5670000000.0, 5680000000.0, 5690000000.0, 5700000000.0, 5710000000.0, 5720000000.0, 5745000000.0, 5755000000.0, 5765000000.0, 5775000000.0, 5785000000.0, 5795000000.0, 5805000000.0, 5825000000.0, 5860000000.0, 5870000000.0, 5880000000.0, 5890000000.0, 5900000000.0, 5910000000.0, 5920000000.0]
         # Create the labels list
@@ -165,14 +164,14 @@ class tx_attacker(gr.top_block, Qt.QWidget):
         self.top_layout.addWidget(self._tx_gain_win)
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
             1024, #size
-            "", #name
+            "test", #name
             1 #number of inputs
         )
         self.qtgui_const_sink_x_0.set_update_time(0.10)
         self.qtgui_const_sink_x_0.set_y_axis(-2, 2)
         self.qtgui_const_sink_x_0.set_x_axis(-2, 2)
         self.qtgui_const_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, "")
-        self.qtgui_const_sink_x_0.enable_autoscale(True)
+        self.qtgui_const_sink_x_0.enable_autoscale(False)
         self.qtgui_const_sink_x_0.enable_grid(False)
         self.qtgui_const_sink_x_0.enable_axis_labels(True)
 
@@ -219,23 +218,33 @@ class tx_attacker(gr.top_block, Qt.QWidget):
             lambda i: self.set_lo_offset(self._lo_offset_options[i]))
         # Create the radio buttons
         self.top_layout.addWidget(self._lo_offset_tool_bar)
+        self._interval_range = Range(10, 1000, 1, 300, 200)
+        self._interval_win = RangeWidget(self._interval_range, self.set_interval, 'interval', "counter_slider", int)
+        self.top_layout.addWidget(self._interval_win)
         self.ieee802_11_mac_0 = ieee802_11.mac([0x23, 0x23, 0x23, 0x23, 0x23, 0x23], [0x42, 0x42, 0x42, 0x42, 0x42, 0x42], [0xff, 0xff, 0xff, 0xff, 0xff, 255])
+        self.foo_random_periodic_msg_source_0 = foo.random_periodic_msg_source(pdu_length, 300, 1, True, False, 1)
+        self.foo_packet_pad2_0 = foo.packet_pad2(False, False, 0.01, 100, 1000)
+        self.foo_packet_pad2_0.set_min_output_buffer(96000)
         self.blocks_vector_source_x_0 = blocks.vector_source_c((0,), False, 1, [])
+        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate,True)
         self.blocks_socket_pdu_0 = blocks.socket_pdu('TCP_SERVER', '', '52001', 10000, False)
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_cc(0.6)
         self.blocks_multiply_const_vxx_0.set_min_output_buffer(100000)
-        self.blocks_message_strobe_0_0 = blocks.message_strobe(pmt.intern("".join("x" for i in range(pdu_length))), interval)
+        self.attack_impairment_block_0 = attack.impairment_block(0, 0, 0, 0, 0, 0, 0, 0)
 
 
         ##################################################
         # Connections
         ##################################################
-        self.msg_connect((self.blocks_message_strobe_0_0, 'strobe'), (self.ieee802_11_mac_0, 'app in'))
         self.msg_connect((self.blocks_socket_pdu_0, 'pdus'), (self.ieee802_11_mac_0, 'app in'))
+        self.msg_connect((self.foo_random_periodic_msg_source_0, 'out'), (self.ieee802_11_mac_0, 'app in'))
         self.msg_connect((self.ieee802_11_mac_0, 'phy out'), (self.ieee802_11_mac_0, 'app in'))
         self.msg_connect((self.ieee802_11_mac_0, 'phy out'), (self.wifi_phy_hier_0, 'mac_in'))
-        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.qtgui_const_sink_x_0, 0))
+        self.connect((self.attack_impairment_block_0, 0), (self.blocks_throttle_0, 0))
+        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.foo_packet_pad2_0, 0))
+        self.connect((self.blocks_throttle_0, 0), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.blocks_vector_source_x_0, 0), (self.wifi_phy_hier_0, 0))
+        self.connect((self.foo_packet_pad2_0, 0), (self.attack_impairment_block_0, 0))
         self.connect((self.wifi_phy_hier_0, 0), (self.blocks_multiply_const_vxx_0, 0))
 
 
@@ -256,6 +265,7 @@ class tx_attacker(gr.top_block, Qt.QWidget):
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
         self._samp_rate_callback(self.samp_rate)
+        self.blocks_throttle_0.set_sample_rate(self.samp_rate)
         self.wifi_phy_hier_0.set_bandwidth(self.samp_rate)
 
     def get_pdu_length(self):
@@ -263,7 +273,6 @@ class tx_attacker(gr.top_block, Qt.QWidget):
 
     def set_pdu_length(self, pdu_length):
         self.pdu_length = pdu_length
-        self.blocks_message_strobe_0_0.set_msg(pmt.intern("".join("x" for i in range(self.pdu_length))))
 
     def get_out_buf_size(self):
         return self.out_buf_size
@@ -283,7 +292,6 @@ class tx_attacker(gr.top_block, Qt.QWidget):
 
     def set_interval(self, interval):
         self.interval = interval
-        self.blocks_message_strobe_0_0.set_period(self.interval)
 
     def get_freq(self):
         return self.freq

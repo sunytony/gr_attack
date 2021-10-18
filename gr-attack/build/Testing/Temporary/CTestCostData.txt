@@ -1,0 +1,6 @@
+qa_random_periodic_source 0 0
+qa_modified_RAPP 0 0
+qa_impairment_block 1 0.466414
+---
+qa_random_periodic_source
+qa_modified_RAPP

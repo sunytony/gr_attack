@@ -1,5 +1,22 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1attack_1_1modified__RAPP" kind="class"><name>gr::attack::modified_RAPP</name>
+    <member refid="classgr_1_1attack_1_1modified__RAPP_1a97cc7967fb3d5cb7f03511bd2dec14c7" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP_1a219ae73f175f1c249dd5772a9a17cf00" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP_1a3f4a590351cb0e8adb099d21b477158d" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1attack_1_1modified__RAPP__impl" kind="class"><name>gr::attack::modified_RAPP_impl</name>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a232c33fd2b164944633b1bff451e9a16" kind="variable"><name>d_lineargain</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a7c23a927f6dd12dc4753f61df8c34b2b" kind="variable"><name>d_phasegain</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a290cfc456638831eb19549bcdffefa49" kind="variable"><name>d_smoothness</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a4edd7c89a26ac7df28f70feddb63b5b3" kind="variable"><name>d_phasesmoothness</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a51c963f9cf75a7fe2e6df1e28fe8ba12" kind="variable"><name>d_outputSL</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1ac05502c7193f39d81a8aa7ebf337100b" kind="variable"><name>d_phasesaturation</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a69596baef9eaaf9608cf43cc71d2d2be" kind="function"><name>set_params</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a62edf3d575f5f09aad57449f4223e84d" kind="function"><name>modified_RAPP_impl</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1aa56a317f27df0b9bf11d5514c92ed76e" kind="function"><name>~modified_RAPP_impl</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP__impl_1a3606d4d3436f35f11cf6cd02f7130e30" kind="function"><name>work</name></member>
+  </compound>
   <compound refid="classgr_1_1attack_1_1random__periodic__source" kind="class"><name>gr::attack::random_periodic_source</name>
     <member refid="classgr_1_1attack_1_1random__periodic__source_1a272ddb737b83ca3e525d06a79a70f69a" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1attack_1_1random__periodic__source_1a9fd7980ce505771851b9968f9e13bf5c" kind="function"><name>make</name></member>
@@ -48,6 +65,10 @@
   <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
   </compound>
   <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="modified__RAPP_8h" kind="file"><name>modified_RAPP.h</name>
+  </compound>
+  <compound refid="modified__RAPP__impl_8h" kind="file"><name>modified_RAPP_impl.h</name>
   </compound>
   <compound refid="random__periodic__source_8h" kind="file"><name>random_periodic_source.h</name>
   </compound>

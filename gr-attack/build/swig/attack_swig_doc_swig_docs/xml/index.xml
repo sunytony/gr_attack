@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1attack_1_1modified__RAPP" kind="class"><name>gr::attack::modified_RAPP</name>
+    <member refid="classgr_1_1attack_1_1modified__RAPP_1a97cc7967fb3d5cb7f03511bd2dec14c7" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP_1a219ae73f175f1c249dd5772a9a17cf00" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1attack_1_1modified__RAPP_1a3f4a590351cb0e8adb099d21b477158d" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1attack_1_1random__periodic__source" kind="class"><name>gr::attack::random_periodic_source</name>
     <member refid="classgr_1_1attack_1_1random__periodic__source_1a272ddb737b83ca3e525d06a79a70f69a" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1attack_1_1random__periodic__source_1a9fd7980ce505771851b9968f9e13bf5c" kind="function"><name>make</name></member>
@@ -19,6 +24,8 @@
   </compound>
   <compound refid="api_8h" kind="file"><name>api.h</name>
     <member refid="api_8h_1a9d4434c8c2111a7b25901442f171c601" kind="define"><name>ATTACK_API</name></member>
+  </compound>
+  <compound refid="modified__RAPP_8h" kind="file"><name>modified_RAPP.h</name>
   </compound>
   <compound refid="random__periodic__source_8h" kind="file"><name>random_periodic_source.h</name>
   </compound>

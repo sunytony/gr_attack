@@ -2,12 +2,14 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="namespacegr_1_1attack" kind="namespace" language="C++">
     <compoundname>gr::attack</compoundname>
+    <innerclass refid="classgr_1_1attack_1_1modified__RAPP" prot="public">gr::attack::modified_RAPP</innerclass>
+    <innerclass refid="classgr_1_1attack_1_1modified__RAPP__impl" prot="public">gr::attack::modified_RAPP_impl</innerclass>
     <innerclass refid="classgr_1_1attack_1_1random__periodic__source" prot="public">gr::attack::random_periodic_source</innerclass>
     <innerclass refid="classgr_1_1attack_1_1random__periodic__source__impl" prot="public">gr::attack::random_periodic_source_impl</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/seungmin/git/gr_attack/gr-attack/include/attack/random_periodic_source.h" line="28" column="1"/>
+    <location file="/home/seungmin/git/gr_attack/gr-attack/include/attack/modified_RAPP.h" line="28" column="1"/>
   </compounddef>
 </doxygen>
