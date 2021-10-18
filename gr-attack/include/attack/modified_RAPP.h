@@ -38,8 +38,8 @@ namespace gr {
       typedef boost::shared_ptr<modified_RAPP> sptr;
 
       static sptr make(float LinearGain, float PhaseGain, float Smoothness, float PhaseSmoothness, float OutputSL, float PhaseSaturation);
-
-      /*!
+      static sptr make();
+	  /*!
        * \brief Return a shared_ptr to a new instance of attack::modified_RAPP.
        *
        * To avoid accidental use of raw pointers, attack::modified_RAPP's
@@ -47,7 +47,6 @@ namespace gr {
        * class. attack::modified_RAPP::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
     };
 
   } // namespace attack

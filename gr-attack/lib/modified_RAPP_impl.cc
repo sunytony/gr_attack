@@ -36,7 +36,9 @@ namespace gr {
         (new modified_RAPP_impl(LinearGain, PhaseGain, Smoothness, PhaseSmoothness, OutputSL, PhaseSaturation));
     }
 
-
+	modified_RAPP::sptr modified_RAPP::make(){
+		return gnuradio::get_initial_sptr(new modified_RAPP_impl(0,0,0,0,0,0));
+	}
     /*
      * The private constructor
      */
